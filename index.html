@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Melophile Music Player</title>
+        <link rel="stylesheet" href="style.css">
+         <style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.column:hover,
+.column:focus,
+.column:active {
+    transform: scale(1.1);
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+
+  clear: both;
+}
+.GFG {
+            background-color: black;
+            border: 2px solid black;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            display: inline-block;
+            font-size: 20px; 
+            margin: 10px 30px;
+            cursor: pointer;
+			border-radius: 12px;
+        }
+		
+.GFB {
+            background-color: black;
+            border: 2px solid blue;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            display: inline-blovck;
+            font-size: 20px; 
+           
+            cursor: pointer;
+			border-radius: 12px;
+        }
+		
+.GFC {
+            background-color: red;
+            border: 2px solid blue;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            display: inline-blovck;
+            font-size: 20px; 
+           
+            cursor: pointer;
+			border-radius: 12px;
+        }
+</style>
+        </head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo1.png" alt="Spotify">Melophile</li>
+            <li><button class="GFC" >Home
+  </button></li>
+            <li><button class="GFB" onclick="window.location.href = 'about.html';">About</button></li>
+        </ul>
+    </nav>
+<h3 style=" line-height: 200px;
+  height: 200px;
+  border: 0px solid green;
+  text-align: center;
+ font-size: 40px;">Welcome to Melophile Music Player</h3>
+
+<div class="row">
+  
+    
+    <div class="column" style="background-image: url('Romantic_Song.jpg');
+  background-size: cover;
+  border: 2px solid white;"><p><button class="GFG" onclick="window.location.href = 'romantic.html';">Romantic Songs
+  </button></p>
+  </div>
+  <div class="column" style="background-image: url('Sad_Song.jpg');
+  background-size: cover;
+  border: 2px solid white;"><p><button class="GFG" onclick="window.location.href = 'sad.html';">Sad Songs
+  </button></p>
+  </div>
+ <div class="column" style="background-image: url('bolly_Song.jpg');
+  background-size: cover;
+  border: 2px solid white;"><p><button class="GFG" onclick="window.location.href = 'bollywood.html';">
+  Bollywood  Songs</button></p>
+  </div>
+ <div class="column" style="background-image: url('holly_Song.jpeg');
+  background-size: cover;
+  border: 2px solid white;"><p><button class="GFG" onclick="window.location.href = 'hollywood.html';">
+  Hollywood Songs </button></p>
+  </div>
+</div>
+</body>
+</html>
